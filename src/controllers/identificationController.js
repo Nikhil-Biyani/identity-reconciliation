@@ -105,8 +105,7 @@ export const identificationController = async (req, res) => {
                 //             secondaryContactIds: [allSecondaryContacts._id],
                 //         }
                 //     });
-
-                }
+                // }
             }
 
         } else if(email && !phoneNumber) {
@@ -152,7 +151,6 @@ export const identificationController = async (req, res) => {
         } else {
             res.status(400).json({ error: "Either Email or Phone Number should be provided." });
         }
-
     } catch (error) {
         console.error(error);
         res.status(500).json({error: "Internal Server Error"});
