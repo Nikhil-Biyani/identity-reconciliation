@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import dotenv from "dotenv";
 import connectDB from './src/config/db.js';
 import identificationRouter from './src/routes/identificationRoute.js';
+import cors from "cors";
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
+app.use(cors());
 
 // rest api
 app.use("/api", identificationRouter);
