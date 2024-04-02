@@ -1,4 +1,4 @@
-import Contact from "../models/contact.js";
+import Contact from "../models/Contact.js";
 
 export const identificationController = async (req, res) => {
     const {email, phoneNumber} = req.body;
