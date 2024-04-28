@@ -7,6 +7,11 @@ https://bitespeed.notion.site/Bitespeed-Backend-Task-Identity-Reconciliation-533
 
 This service provides an API endpoint `/identify` to reconcile customer identities based on their email and phone number.
 
+### Deployment Link
+```
+https://identity-reconciliation-nikhil-biyani.onrender.com/
+```
+
 ## Getting Started
 
 ### Prerequisites
